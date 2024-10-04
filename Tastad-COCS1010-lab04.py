@@ -1,12 +1,10 @@
-# Your Name Here
+# Leif Tastad
 # UWYO COSC 1010
-# Submission Date
+# 10/03/2024
 # Lab 03 
-# Lab Section: 
+# Lab Section: 13
 # Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# Zach
 
 
 
@@ -99,7 +97,20 @@ min_temps = [
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
+tempsummax = 0
+tempsummin = 0
+
+for temp in range(len(max_temps)):
+    tempsummax = tempsummax + max_temps[temp]
+    tempsummin = tempsummin + min_temps[temp]
+print(f"The average daily high temp is {tempsummax/len(max_temps)}. The average daily low temp is {tempsummin/len(min_temps)}.")
+
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
+
+print(f"The highest daily high temperature is {max(max_temps)}. The lowest daily high temperature is {min(max_temps)}. The highest daily low temperature is {max(min_temps)}. The lowest daily low temperature is {min(min_temps)}." )
+
+
+
 
 
